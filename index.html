@@ -3,23 +3,6 @@
 <title>Bilibili 客户端封面收藏查詢</title>
 </head>
 <body>
-<h1>Bilibili 客户端封面收藏</h1>
-<h2>警告及注意事项：</h2>
-1. 链接可能会加载多张图片，消耗流量较大，请小心！<br/>
-2. 加载分页图片大约需要15秒，完整加载后才会显示，请耐心等候。<br/>
-
-<h2>输入日期搜索：（如20180121）</h2>
-<input id="day" type="text" onkeyup="Count()"/><br/>
-<span id="AnswerBox"></span><br/><br/>
-<input type="submit" id="submit1" value="前往" onclick="go();" disabled="disabled"/>
-<input type="submit" id="submit2" value="前往2" style="display: none;" onclick="go2();">
-
-<h2>快捷跳转：</h2>
-1. <a href="list#2015年">2015年</a><br/>
-2. <a href="list#2016年">2016年</a><br/>
-3. <a href="list#2017年">2017年</a><br/>
-4. <a href="list#2018年">2018年</a><br/>
-5. <a href="list#目录">生日贺图</a><br/>
 <script language=javascript> 
 function ValidateNumber(e, pnumber)
 {
@@ -332,7 +315,6 @@ else if(d=="20180121"){document.getElementById("AnswerBox").innerHTML="　2018.0
 else {document.getElementById("AnswerBox").innerHTML="　本日无图！";document.getElementById('submit1').disabled = 'disabled';}
 }
 </script> 
-
 <script language=javascript> 
 function go()
 {
@@ -344,8 +326,7 @@ else if(d >= "20160000"){window.open('https://bilicover.gitbooks.io/2016/content
 else if(d >= "20150000"){window.open('https://bilicover.gitbooks.io/2015/content/'+d+".html");}
 }
 }
-</script> 
-
+</script>
 <script language=javascript> 
 function go2()
 {
@@ -357,6 +338,23 @@ else if(d >= "20160000"){window.open('https://bilicover.gitbooks.io/2016/content
 else if(d >= "20150000"){window.open('https://bilicover.gitbooks.io/2015/content/'+d+"-2.html");}
 }
 }
-</script> 
+</script>
+<h1>Bilibili 客户端封面收藏</h1>
+<h2>警告及注意事项：</h2>
+1. 链接可能会加载多张图片，消耗流量较大，请小心！<br/>
+2. 加载分页图片大约需要15秒，完整加载后才会显示，请耐心等候。<br/>
+
+<h2>输入日期搜索：（如20180121）</h2>
+<input id="day" type="text" onkeyup="Count()"/><br/>
+<span id="AnswerBox"></span><br/><br/>
+<input type="submit" id="submit1" value="前往" onclick="go();" disabled="disabled"/>
+<input type="submit" id="submit2" value="前往2" style="display: none;" onclick="go2();">
+
+<h2>快捷跳转：</h2>
+1. <a href="list#2015年">2015年</a><br/>
+2. <a href="list#2016年">2016年</a><br/>
+3. <a href="list#2017年">2017年</a><br/>
+4. <a href="list#2018年">2018年</a><br/>
+5. <a href="list#目录">生日贺图</a><br/>
 </body>
 </html>
