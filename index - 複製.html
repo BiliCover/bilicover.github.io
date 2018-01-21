@@ -1,0 +1,365 @@
+<html>
+<head>
+<title>Bilibili 客户端封面收藏查詢</title>
+</head>
+<body>
+<h1>Bilibili 客户端封面收藏</h1>
+<h2>警告及注意事项：</h2>
+1. 链接可能会加载多张图片，消耗流量较大，请小心！<br/>
+2. 加载分页图片大约需要15秒，完整加载后才会显示，请耐心等候。<br/>
+
+<h2>輸入日期查詢：（如20180121）</h2>
+<input id="day" type="text" onkeyup="Count()"/>
+<br/>
+<span id="AnswerBox"></span>
+<br/>
+<input type="submit" id="submit1" value="前往" onclick="go();"/>
+	
+<input type="submit" id="submit2" value="前往2" style="display: none;" onclick="go2();">
+
+<h2>快捷跳转：</h2>
+1. <a href="https://bilicover.gitbooks.io/2015/content/">2015年</a><br/>
+2. <a href="https://bilicover.gitbooks.io/2016/content/">2016年</a><br/>
+3. <a href="https://bilicover.gitbooks.io/2017/content/">2017年</a><br/>
+4. <a href="https://bilicover.gitbooks.io/2018/content/">2018年</a><br/>
+5. <a href="https://bilicover.gitbooks.io/main/content/">生日賀圖</a><br/>
+<script language=javascript> 
+function ValidateNumber(e, pnumber)
+{
+    if (!/^\d{1,8}$/.test(pnumber))
+    {
+        e.value = /^\d{1,8}/.exec(e.value);
+    }
+    return false;
+}
+</script> 
+
+<script language=javascript> 
+function Count()
+{
+var d = document.getElementById("day").value;
+if(d.length != 8){document.getElementById("AnswerBox").innerHTML="請輸入正確日期！";}
+else if(d=="20150000"){document.getElementById("AnswerBox").innerHTML="2015-默认封面";}
+else if(d=="20150001"){document.getElementById("AnswerBox").innerHTML="2015未知日期";}
+else if(d=="20150002"){document.getElementById("AnswerBox").innerHTML="2015-yooooo";}
+else if(d=="20150003"){document.getElementById("AnswerBox").innerHTML="2015-一对○○，一对○";}
+else if(d=="20150004"){document.getElementById("AnswerBox").innerHTML="2015-任意门";}
+else if(d=="20150127"){document.getElementById("AnswerBox").innerHTML="2015.01.27-吃腊八粥";}
+else if(d=="20150401"){document.getElementById("AnswerBox").innerHTML="2015.04.01-愚人节";}
+else if(d=="20150413"){document.getElementById("AnswerBox").innerHTML="2015.04.13-泼水节";}
+else if(d=="20150501"){document.getElementById("AnswerBox").innerHTML="2015.05.01-劳动节";}
+else if(d=="20150504"){document.getElementById("AnswerBox").innerHTML="2015.05.04-青年节";}
+else if(d=="20150510"){document.getElementById("AnswerBox").innerHTML="2015.05.10-母亲节";}
+else if(d=="20150512"){document.getElementById("AnswerBox").innerHTML="2015.05.12-复联上映";}
+else if(d=="20150520"){document.getElementById("AnswerBox").innerHTML="2015.05.20-我爱你";}
+else if(d=="20150526"){document.getElementById("AnswerBox").innerHTML="2015.05.26-猜拳活动";}
+else if(d=="20150601"){document.getElementById("AnswerBox").innerHTML="2015.06.01-BML第一弹嘉宾公布";}
+else if(d=="20150605"){document.getElementById("AnswerBox").innerHTML="2015.06.05-高考前两天";}
+else if(d=="20150606"){document.getElementById("AnswerBox").innerHTML="2015.06.06-高考前一天";}
+else if(d=="20150607"){document.getElementById("AnswerBox").innerHTML="2015.06.07-高考当天";}
+else if(d=="20150620"){document.getElementById("AnswerBox").innerHTML="2015.06.20-端午节";}
+else if(d=="20150621"){document.getElementById("AnswerBox").innerHTML="2015.06.21-父亲节";}
+else if(d=="20150622"){document.getElementById("AnswerBox").innerHTML="2015.06.22-使徒来袭";}
+else if(d=="20150626"){document.getElementById("AnswerBox").innerHTML="2015.06.26-B站6周年";}
+else if(d=="20150701"){document.getElementById("AnswerBox").innerHTML="2015.07.01-多一秒+1s";}
+else if(d=="20150713"){document.getElementById("AnswerBox").innerHTML="2015.07.13-岩田聪-闪屏";}
+else if(d=="20150715"){document.getElementById("AnswerBox").innerHTML="2015.07.15-那兔手游公测";}
+else if(d=="20150717"){document.getElementById("AnswerBox").innerHTML="2015.07.17-中国好声音合作";}
+else if(d=="20150724"){document.getElementById("AnswerBox").innerHTML="2015.07.24-发现新地球";}
+else if(d=="20150725"){document.getElementById("AnswerBox").innerHTML="2015.07.25-BML直播";}
+else if(d=="20150728"){document.getElementById("AnswerBox").innerHTML="2015.07.28-鲤";}
+else if(d=="20150731"){document.getElementById("AnswerBox").innerHTML="2015.07.31-北京申奥成功";}
+else if(d=="20150803"){document.getElementById("AnswerBox").innerHTML="2015.08.03-兄貴節";}
+else if(d=="20150813"){document.getElementById("AnswerBox").innerHTML="2015.08.13-祈福天津v";}
+else if(d=="20150820"){document.getElementById("AnswerBox").innerHTML="2015.08.20-七夕";}
+else if(d=="20150829"){document.getElementById("AnswerBox").innerHTML="2015.08.29-翻唱大赛";}
+else if(d=="20150901"){document.getElementById("AnswerBox").innerHTML="2015.09.01-开学";}
+else if(d=="20150903"){document.getElementById("AnswerBox").innerHTML="2015.09.03-抗战70周年";}
+else if(d=="20150910"){document.getElementById("AnswerBox").innerHTML="2015.09.10-教师节";}
+else if(d=="20150913"){document.getElementById("AnswerBox").innerHTML="2015.09.13-程序员节";}
+else if(d=="20150927"){document.getElementById("AnswerBox").innerHTML="2015.09.27-中秋节";}
+else if(d=="20150929"){document.getElementById("AnswerBox").innerHTML="2015.09.29-十月新番来袭";}
+else if(d=="20150930"){document.getElementById("AnswerBox").innerHTML="2015.09.30-火星发现水";}
+else if(d=="20151001"){document.getElementById("AnswerBox").innerHTML="2015.10.01-十月一带你飞";}
+else if(d=="20151010"){document.getElementById("AnswerBox").innerHTML="2015.10.10-萌节";}
+else if(d=="20151011"){document.getElementById("AnswerBox").innerHTML="2015.10.11-萝莉";}
+else if(d=="20151031"){document.getElementById("AnswerBox").innerHTML="2015.10.31-halloween";}
+else if(d=="20151111"){document.getElementById("AnswerBox").innerHTML="2015.11.11-蘑菇街广告";}
+else if(d=="20151113"){document.getElementById("AnswerBox").innerHTML="2015.11.13-安卓后台播放";}
+else if(d=="20151116"){document.getElementById("AnswerBox").innerHTML="2015.11.16-巴黎惨案";}
+else if(d=="20151120"){document.getElementById("AnswerBox").innerHTML="2015.11.20-大圣归来";}
+else if(d=="20151126"){document.getElementById("AnswerBox").innerHTML="2015.11.26-感恩节";}
+else if(d=="20151130"){document.getElementById("AnswerBox").innerHTML="2015.11.30-富坚义博休刊一周年";}
+else if(d=="20151214"){document.getElementById("AnswerBox").innerHTML="2015.12.14-官博150w粉";}
+else if(d=="20151222"){document.getElementById("AnswerBox").innerHTML="2015.12.22-⑨来了";}
+else if(d=="20151224"){document.getElementById("AnswerBox").innerHTML="2015.12.24-平安夜";}
+else if(d=="20160000"){document.getElementById("AnswerBox").innerHTML="2016-默认封面";}
+else if(d=="20160001"){document.getElementById("AnswerBox").innerHTML="2016.02-春节扭蛋";}
+else if(d=="20160002"){document.getElementById("AnswerBox").innerHTML="2016.03-广州塔上的小电视";}
+else if(d=="20160101"){document.getElementById("AnswerBox").innerHTML="2016.01.01-元旦";}
+else if(d=="20160103"){document.getElementById("AnswerBox").innerHTML="2016.01.03-Moe 2015 动画角色人气大赏";}
+else if(d=="20160104"){document.getElementById("AnswerBox").innerHTML="2016.01.04-炸鸡吃掉吃掉";}
+else if(d=="20160114"){document.getElementById("AnswerBox").innerHTML="2016.01.14-R.I.P阿伦";}
+else if(d=="20160129"){document.getElementById("AnswerBox").innerHTML="2016.01.29-功夫熊猫3";}
+else if(d=="20160130"){document.getElementById("AnswerBox").innerHTML="2016.01.30-缪斯演唱会";}
+else if(d=="20160207"){document.getElementById("AnswerBox").innerHTML="2016.02.07-2016拜年祭";}
+else if(d=="20160208"){document.getElementById("AnswerBox").innerHTML="2016.02.08-初一&2016.02.08-春联";
+document.getElementById('submit2').style = 'display: block;';
+}
+else if(d=="20160209"){document.getElementById("AnswerBox").innerHTML="2016.02.09-初二";}
+else if(d=="20160210"){document.getElementById("AnswerBox").innerHTML="2016.02.10-初三";}
+else if(d=="20160211"){document.getElementById("AnswerBox").innerHTML="2016.02.11-初四";}
+else if(d=="20160212"){document.getElementById("AnswerBox").innerHTML="2016.02.12-初五";}
+else if(d=="20160213"){document.getElementById("AnswerBox").innerHTML="2016.02.13-初六";}
+else if(d=="20160214"){document.getElementById("AnswerBox").innerHTML="2016.02.14-情人节";}
+else if(d=="20160215"){document.getElementById("AnswerBox").innerHTML="2016.02.15-R.I.P Umika";}
+else if(d=="20160220"){document.getElementById("AnswerBox").innerHTML="2016.02.20-暴走直播间";}
+else if(d=="20160222"){document.getElementById("AnswerBox").innerHTML="2016.02.22-B站猜灯谜";}
+else if(d=="20160224"){document.getElementById("AnswerBox").innerHTML="2016.02.24-小米5发布会直播";}
+else if(d=="20160227"){document.getElementById("AnswerBox").innerHTML="2016.02.27-口袋妖精20周年";}
+else if(d=="20160228"){document.getElementById("AnswerBox").innerHTML="2016.02.28-炮姐回归";}
+else if(d=="20160229"){document.getElementById("AnswerBox").innerHTML="2016.02.29-祝贺当天生日的人生快";}
+else if(d=="20160308"){document.getElementById("AnswerBox").innerHTML="2016.03.08-妇女节";}
+else if(d=="20160309"){document.getElementById("AnswerBox").innerHTML="2016.03.09-MIKU";}
+else if(d=="20160314"){document.getElementById("AnswerBox").innerHTML="2016.03.14-圆周率日";}
+else if(d=="20160330"){document.getElementById("AnswerBox").innerHTML="2016.03.30-生化危机";}
+else if(d=="20160331"){document.getElementById("AnswerBox").innerHTML="2016.03.31-2233专用摄影师";}
+else if(d=="20160405"){document.getElementById("AnswerBox").innerHTML="2016.04.05-上海BML";}
+else if(d=="20160408"){document.getElementById("AnswerBox").innerHTML="2016.04.08-在下坂本，有何贵干&2016.04.08-R.I.P光叔";
+document.getElementById('submit2').style = 'display: block;';}
+else if(d=="20160413"){document.getElementById("AnswerBox").innerHTML="2016.04.13-bilibili dancing festival";}
+else if(d=="20160416"){document.getElementById("AnswerBox").innerHTML="2016.04.16-WHY I SO DIAO";}
+else if(d=="20160422"){document.getElementById("AnswerBox").innerHTML="2016.04.22-BML第二弹嘉宾公开";}
+else if(d=="20160429"){document.getElementById("AnswerBox").innerHTML="2016.04.29-niconico超会议特约报道";}
+else if(d=="20160501"){document.getElementById("AnswerBox").innerHTML="2016.05.01-脑洞节";}
+else if(d=="20160506"){document.getElementById("AnswerBox").innerHTML="2016.05.06-BML正式公开";}
+else if(d=="20160508"){document.getElementById("AnswerBox").innerHTML="2016.05.08-母亲节";}
+else if(d=="20160510"){document.getElementById("AnswerBox").innerHTML="2016.05.10-你屏大你先说";}
+else if(d=="20160513"){document.getElementById("AnswerBox").innerHTML="2016.05.13-BML外场活动";}
+else if(d=="20160519"){document.getElementById("AnswerBox").innerHTML="2016.05.19-战舞幻想曲";}
+else if(d=="20160520"){document.getElementById("AnswerBox").innerHTML="2016.05.20-BML7.23售票";}
+else if(d=="20160525"){document.getElementById("AnswerBox").innerHTML="2016.05.25-BML第二弹嘉宾公开";}
+else if(d=="20160527"){document.getElementById("AnswerBox").innerHTML="2016.05.27-BML7.24售票";}
+else if(d=="20160529"){document.getElementById("AnswerBox").innerHTML="2016.05.29-偶像梦幻祭";}
+else if(d=="20160601"){document.getElementById("AnswerBox").innerHTML="2016.06.01-儿童节快乐";}
+else if(d=="20160606"){document.getElementById("AnswerBox").innerHTML="2016.06.06-Lancome广告";}
+else if(d=="20160609"){document.getElementById("AnswerBox").innerHTML="2016.06.09-端午节快乐";}
+else if(d=="20160618"){document.getElementById("AnswerBox").innerHTML="2016.06.18-天猫粉丝狂欢节";}
+else if(d=="20160619"){document.getElementById("AnswerBox").innerHTML="2016.06.19-父亲节快乐";}
+else if(d=="20160624"){document.getElementById("AnswerBox").innerHTML="2016.06.24-飘柔广告";}
+else if(d=="20160625"){document.getElementById("AnswerBox").innerHTML="2016.06.25-7月正版新番";}
+else if(d=="20160626"){document.getElementById("AnswerBox").innerHTML="2016.06.26-B站7周年";}
+else if(d=="20160701"){document.getElementById("AnswerBox").innerHTML="2016.07.01-夏日鬼畜大赛";}
+else if(d=="20160703"){document.getElementById("AnswerBox").innerHTML="2016.07.03-食戟之灵";}
+else if(d=="20160705"){document.getElementById("AnswerBox").innerHTML="2016.07.05-驱魔少年";}
+else if(d=="20160708"){document.getElementById("AnswerBox").innerHTML="2016.07.08-宅舞大赛总决赛";}
+else if(d=="20160713"){document.getElementById("AnswerBox").innerHTML="2016.07.13-局座来袭";}
+else if(d=="20160722"){document.getElementById("AnswerBox").innerHTML="2016.07.22-bilibili夏";}
+else if(d=="20160723"){document.getElementById("AnswerBox").innerHTML="2016.07.23-BML直播蓝";}
+else if(d=="20160724"){document.getElementById("AnswerBox").innerHTML="2016.07.24-BML直播彩";}
+else if(d=="20160727"){document.getElementById("AnswerBox").innerHTML="2016.07.27-Are you Pro";}
+else if(d=="20160804"){document.getElementById("AnswerBox").innerHTML="2016.08.04-鬼畜大赛结果公布";}
+else if(d=="20160809"){document.getElementById("AnswerBox").innerHTML="2016.08.09-七夕之约&2016.08.09-七夕之约游戏立绘";
+document.getElementById('submit2').style = 'display: block;';}
+else if(d=="20160814"){document.getElementById("AnswerBox").innerHTML="2016.08.14-mad大赛投票";}
+else if(d=="20160816"){document.getElementById("AnswerBox").innerHTML="2016.08.16-22.33娘生日贺图";}
+else if(d=="20160818"){document.getElementById("AnswerBox").innerHTML="2016.08.18-百人宅舞party";}
+else if(d=="20160828"){document.getElementById("AnswerBox").innerHTML="2016.08.28-mad大赛颁奖";}
+else if(d=="20160831"){document.getElementById("AnswerBox").innerHTML="2016.08.31-miku生日贺图";}
+else if(d=="20160901"){document.getElementById("AnswerBox").innerHTML="2016.09.01-新学期";}
+else if(d=="20160910"){document.getElementById("AnswerBox").innerHTML="2016.09.10-教师节";}
+else if(d=="20160912"){document.getElementById("AnswerBox").innerHTML="2016.09.12-程序员日";}
+else if(d=="20160915"){document.getElementById("AnswerBox").innerHTML="2016.09.15-中秋节";}
+else if(d=="20160924"){document.getElementById("AnswerBox").innerHTML="2016.09.24-十月正版新番";}
+else if(d=="20160927"){document.getElementById("AnswerBox").innerHTML="2016.09.27-小米5s发布会";}
+else if(d=="20160929"){document.getElementById("AnswerBox").innerHTML="2016.09.29-FGO iOS版本上线";}
+else if(d=="20161001"){document.getElementById("AnswerBox").innerHTML="2016.10.01-国庆节";}
+else if(d=="20161002"){document.getElementById("AnswerBox").innerHTML="2016.10.02-大鱼海棠&2016.10.02-红叶祭";
+document.getElementById('submit2').style = 'display: block;';}
+else if(d=="20161003"){document.getElementById("AnswerBox").innerHTML="2016.10.03-星梦手记";}
+else if(d=="20161008"){document.getElementById("AnswerBox").innerHTML="2016.10.08-萌节预告";}
+else if(d=="20161010"){document.getElementById("AnswerBox").innerHTML="2016.10.10-萌节";}
+else if(d=="20161013"){document.getElementById("AnswerBox").innerHTML="2016.10.13-FGO全平台公测";}
+else if(d=="20161025"){document.getElementById("AnswerBox").innerHTML="2016.10.25-小米Note2发布会";}
+else if(d=="20161031"){document.getElementById("AnswerBox").innerHTML="2016.10.31-万圣夜";}
+else if(d=="20161106"){document.getElementById("AnswerBox").innerHTML="2016.11.06-Moe 国产动画场";}
+else if(d=="20161107"){document.getElementById("AnswerBox").innerHTML="2016.11.07-默认封面";}
+else if(d=="20161108"){document.getElementById("AnswerBox").innerHTML="2016.11.08-我在故宫修文物";}
+else if(d=="20161109"){document.getElementById("AnswerBox").innerHTML="2016.11.09-双十一天猫广告";}
+else if(d=="20161111"){document.getElementById("AnswerBox").innerHTML="2016.11.11-双十一苏宁广告";}
+else if(d=="20161119"){document.getElementById("AnswerBox").innerHTML="2016.11.19-Moe 国产动画场决赛";}
+else if(d=="20161121"){document.getElementById("AnswerBox").innerHTML="2016.11.21-Moe 日本动画场";}
+else if(d=="20161124"){document.getElementById("AnswerBox").innerHTML="2016.11.24-默认封面";}
+else if(d=="20161125"){document.getElementById("AnswerBox").innerHTML="2016.11.25-默认封面";}
+else if(d=="20161130"){document.getElementById("AnswerBox").innerHTML="2016.11.30-免费看你的名字";}
+else if(d=="20161204"){document.getElementById("AnswerBox").innerHTML="2016.12.04-她与她的猫";}
+else if(d=="20161205"){document.getElementById("AnswerBox").innerHTML="2016.12.05-秒速5厘米";}
+else if(d=="20161215"){document.getElementById("AnswerBox").innerHTML="2016.12.15-我在故宫修文物";}
+else if(d=="20161217"){document.getElementById("AnswerBox").innerHTML="2016.12.17-200W粉";}
+else if(d=="20161218"){document.getElementById("AnswerBox").innerHTML="2016.12.18-Moe 日本动画场72强";}
+else if(d=="20161221"){document.getElementById("AnswerBox").innerHTML="2016.12.21-国际篮球日";}
+else if(d=="20161222"){document.getElementById("AnswerBox").innerHTML="2016.12.22-魔法少女小圆";}
+else if(d=="20161224"){document.getElementById("AnswerBox").innerHTML="2016.12.24-平安夜";}
+else if(d=="20161225"){document.getElementById("AnswerBox").innerHTML="2016.12.25-圣诞节\(B萌8强投票\)";}
+else if(d=="20161226"){document.getElementById("AnswerBox").innerHTML="2016.12.26-2017拜年祭预告";}
+else if(d=="20170000"){document.getElementById("AnswerBox").innerHTML="2017-默认封面";}
+else if(d=="20170001"){document.getElementById("AnswerBox").innerHTML="2017-鬼灯的冷彻 第二季";}
+else if(d=="20170101"){document.getElementById("AnswerBox").innerHTML="2017.01.01-Moe 日本动画场决赛";}
+else if(d=="20170105"){document.getElementById("AnswerBox").innerHTML="2017.01.05-腊八";}
+else if(d=="20170107"){document.getElementById("AnswerBox").innerHTML="2017.01.07-2017国漫起飞";}
+else if(d=="20170119"){document.getElementById("AnswerBox").innerHTML="2017.01.19-我在故宫修文物";}
+else if(d=="20170122"){document.getElementById("AnswerBox").innerHTML="2017.01.22-苏宁广告";}
+else if(d=="20170124"){document.getElementById("AnswerBox").innerHTML="2017.01.24-2017拜年祭预告";}
+else if(d=="20170125"){document.getElementById("AnswerBox").innerHTML="2017.01.25-小米鬼畜全明星";}
+else if(d=="20170126"){document.getElementById("AnswerBox").innerHTML="2017.01.26-2017拜年祭预告";}
+else if(d=="20170127"){document.getElementById("AnswerBox").innerHTML="2017.01.27-2017拜年祭";}
+else if(d=="20170128"){document.getElementById("AnswerBox").innerHTML="2017.01.28-初一";}
+else if(d=="20170129"){document.getElementById("AnswerBox").innerHTML="2017.01.29-初二";}
+else if(d=="20170130"){document.getElementById("AnswerBox").innerHTML="2017.01.30-初三";}
+else if(d=="20170131"){document.getElementById("AnswerBox").innerHTML="2017.01.31-初四";}
+else if(d=="20170201"){document.getElementById("AnswerBox").innerHTML="2017.02.01-初五";}
+else if(d=="20170202"){document.getElementById("AnswerBox").innerHTML="2017.02.02-初六";}
+else if(d=="20170208"){document.getElementById("AnswerBox").innerHTML="2017.02.08-初音红米Note4预告";}
+else if(d=="20170210"){document.getElementById("AnswerBox").innerHTML="2017.02.10-Dove广告";}
+else if(d=="20170211"){document.getElementById("AnswerBox").innerHTML="2017.02.11-元宵";}
+else if(d=="20170213"){document.getElementById("AnswerBox").innerHTML="2017.02.13-初音红米Note4预告";}
+else if(d=="20170214"){document.getElementById("AnswerBox").innerHTML="2017.02.14-初音红米Note4预售开始";}
+else if(d=="20170310"){document.getElementById("AnswerBox").innerHTML="2017.03.10-Forever Chuck广告";}
+else if(d=="20170317"){document.getElementById("AnswerBox").innerHTML="2017.03.17-欧莱雅广告\(阴阳师半年度\)";}
+else if(d=="20170318"){document.getElementById("AnswerBox").innerHTML="2017.03.18-欧莱雅广告\(阴阳师半年度\)";}
+else if(d=="20170319"){document.getElementById("AnswerBox").innerHTML="2017.03.19-Forever Chuck广告";}
+else if(d=="20170401"){document.getElementById("AnswerBox").innerHTML="2017.04.01-站娘6699出道";}
+else if(d=="20170402"){document.getElementById("AnswerBox").innerHTML="2017.04.02-bilibili 2017春季新番";}
+else if(d=="20170408"){document.getElementById("AnswerBox").innerHTML="2017.04.08-国产动画 春夏导视";}
+else if(d=="20170409"){document.getElementById("AnswerBox").innerHTML="2017.04.09-埃罗芒阿老师";}
+else if(d=="20170419"){document.getElementById("AnswerBox").innerHTML="2017.04.19-小米6发布会";}
+else if(d=="20170501"){document.getElementById("AnswerBox").innerHTML="2017.05.01-劳动节";}
+else if(d=="20170505"){document.getElementById("AnswerBox").innerHTML="2017.05.05-立夏";}
+else if(d=="20170508"){document.getElementById("AnswerBox").innerHTML="2017.05.08-守望先锋免费";}
+else if(d=="20170514"){document.getElementById("AnswerBox").innerHTML="2017.05.14-母亲节";}
+else if(d=="20170520"){document.getElementById("AnswerBox").innerHTML="2017.05.20-Fate/Accel Zero Order";}
+else if(d=="20170525"){document.getElementById("AnswerBox").innerHTML="2017.05.25-碧蓝航线iOS";}
+else if(d=="20170526"){document.getElementById("AnswerBox").innerHTML="2017.05.26-恋爱暴君";}
+else if(d=="20170530"){document.getElementById("AnswerBox").innerHTML="2017.05.30-端午节快乐";}
+else if(d=="20170601"){document.getElementById("AnswerBox").innerHTML="2017.06.01-儿童节";}
+else if(d=="20170602"){document.getElementById("AnswerBox").innerHTML="2017.06.02-碧蓝航线全平台公测";}
+else if(d=="20170604"){document.getElementById("AnswerBox").innerHTML="2017.06.04-小米Max2超耐久直播";}
+else if(d=="20170609"){document.getElementById("AnswerBox").innerHTML="2017.06.09-BML正式开启";}
+else if(d=="20170610"){document.getElementById("AnswerBox").innerHTML="2017.06.10-Moe 2017 动画角色人气大赏";}
+else if(d=="20170618"){document.getElementById("AnswerBox").innerHTML="2017.06.18-父亲节";}
+else if(d=="20170628"){document.getElementById("AnswerBox").innerHTML="2017.06.28-七月新番";}
+else if(d=="20170701"){document.getElementById("AnswerBox").innerHTML="2017.07.01-Dior广告";}
+else if(d=="20170702"){document.getElementById("AnswerBox").innerHTML="2017.07.02-Moe 国产动画场";}
+else if(d=="20170703"){document.getElementById("AnswerBox").innerHTML="2017.07.03-Fate/Apocrypha";}
+else if(d=="20170707"){document.getElementById("AnswerBox").innerHTML="2017.07.07-国产动画 夏日导视";}
+else if(d=="20170717"){document.getElementById("AnswerBox").innerHTML="2017.07.17-9分钟全面了解BILIBILI WORLD";}
+else if(d=="20170720"){document.getElementById("AnswerBox").innerHTML="2017.07.20-Moe 国产动画场决赛";}
+else if(d=="20170721"){document.getElementById("AnswerBox").innerHTML="2017.07.21-BML全息演唱会";}
+else if(d=="20170722"){document.getElementById("AnswerBox").innerHTML="2017.07.22-Moe 日本动画场";}
+else if(d=="20170723"){document.getElementById("AnswerBox").innerHTML="2017.07.23-BML主题线下聚会";}
+else if(d=="20170730"){document.getElementById("AnswerBox").innerHTML="2017.07.30-夏日挑战季";}
+else if(d=="20170806"){document.getElementById("AnswerBox").innerHTML="2017.08.06-Fate/Apocrypha";}
+else if(d=="20170809"){document.getElementById("AnswerBox").innerHTML="2017.08.09-R11广告";}
+else if(d=="20170811"){document.getElementById("AnswerBox").innerHTML="2017.08.11-异世界食堂";}
+else if(d=="20170813"){document.getElementById("AnswerBox").innerHTML="2017.08.13-Re:CREATORS";}
+else if(d=="20170815"){document.getElementById("AnswerBox").innerHTML="2017.08.15-异世界食堂";}
+else if(d=="20170817"){document.getElementById("AnswerBox").innerHTML="2017.08.17-神代梦华谭";}
+else if(d=="20170820"){document.getElementById("AnswerBox").innerHTML="2017.08.20-Fate/Apocrypha";}
+else if(d=="20170821"){document.getElementById("AnswerBox").innerHTML="2017.08.21-异世界食堂";}
+else if(d=="20170823"){document.getElementById("AnswerBox").innerHTML="2017.08.23-Moe 日本动画场8强";}
+else if(d=="20170824"){document.getElementById("AnswerBox").innerHTML="2017.08.24-欢迎来到实力至上主义的教室";}
+else if(d=="20170825"){document.getElementById("AnswerBox").innerHTML="2017.08.25-清扬放肆大学";}
+else if(d=="20170826"){document.getElementById("AnswerBox").innerHTML="2017.08.26-Moe 日本动画场决赛";}
+else if(d=="20170827"){document.getElementById("AnswerBox").innerHTML="2017.08.27-你的名字";}
+else if(d=="20170828"){document.getElementById("AnswerBox").innerHTML="2017.08.28-七夕之约";}
+else if(d=="20170829"){document.getElementById("AnswerBox").innerHTML="2017.08.29-异世界食堂";}
+else if(d=="20170902"){document.getElementById("AnswerBox").innerHTML="2017.09.02-阴阳师";}
+else if(d=="20170903"){document.getElementById("AnswerBox").innerHTML="2017.09.03-Re:CREATORS";}
+else if(d=="20170907"){document.getElementById("AnswerBox").innerHTML="2017.09.07-欢迎来到实力至上主义的教室";}
+else if(d=="20170910"){document.getElementById("AnswerBox").innerHTML="2017.09.10-Re:CREATORS";}
+else if(d=="20170916"){document.getElementById("AnswerBox").innerHTML="2017.09.16-异世界食堂";}
+else if(d=="20170917"){document.getElementById("AnswerBox").innerHTML="2017.09.17-Re:CREATORS";}
+else if(d=="20170923"){document.getElementById("AnswerBox").innerHTML="2017.09.23-秋季新番";}
+else if(d=="20170924"){document.getElementById("AnswerBox").innerHTML="2017.09.24-10月新番";}
+else if(d=="20170928"){document.getElementById("AnswerBox").innerHTML="2017.09.28-欢迎来到实力至上主义的教室";}
+else if(d=="20170929"){document.getElementById("AnswerBox").innerHTML="2017.09.29-10月新番";}
+else if(d=="20170930"){document.getElementById("AnswerBox").innerHTML="2017.09.30-妄想学生会 剧场版 预告";}
+else if(d=="20171001"){document.getElementById("AnswerBox").innerHTML="2017.10.01-国产动画秋季导视";}
+else if(d=="20171003"){document.getElementById("AnswerBox").innerHTML="2017.10.03-妄想学生会 剧场版";}
+else if(d=="20171004"){document.getElementById("AnswerBox").innerHTML="2017.10.04-阿松 第二季";}
+else if(d=="20171005"){document.getElementById("AnswerBox").innerHTML="2017.10.05-妄想学生会 剧场版";}
+else if(d=="20171007"){document.getElementById("AnswerBox").innerHTML="2017.10.07-URAHARA";}
+else if(d=="20171022"){document.getElementById("AnswerBox").innerHTML="2017.10.22-宝石之国";}
+else if(d=="20171023"){document.getElementById("AnswerBox").innerHTML="2017.10.23-小埋R";}
+else if(d=="20171027"){document.getElementById("AnswerBox").innerHTML="2017.10.27-一人之下2";}
+else if(d=="20171028"){document.getElementById("AnswerBox").innerHTML="2017.10.28-LANCÔAM";}
+else if(d=="20171101"){document.getElementById("AnswerBox").innerHTML="2017.11.01-春宵苦短，少女前进吧";}
+else if(d=="20171105"){document.getElementById("AnswerBox").innerHTML="2017.11.05-宣告黎明的露之歌";}
+else if(d=="20171107"){document.getElementById("AnswerBox").innerHTML="2017.11.07-Infini-T Force";}
+else if(d=="20171111"){document.getElementById("AnswerBox").innerHTML="2017.11.11-双十一天猫广告";}
+else if(d=="20171115"){document.getElementById("AnswerBox").innerHTML="2017.11.15-URAHARA";}
+else if(d=="20171116"){document.getElementById("AnswerBox").innerHTML="2017.11.16-哔哩哔哩篮球应援团";}
+else if(d=="20171117"){document.getElementById("AnswerBox").innerHTML="2017.11.17-一人之下2";}
+else if(d=="20171121"){document.getElementById("AnswerBox").innerHTML="2017.11.21-Infini-T Force";}
+else if(d=="20171124"){document.getElementById("AnswerBox").innerHTML="2017.11.24-狐妖小红娘 南国篇";}
+else if(d=="20171125"){document.getElementById("AnswerBox").innerHTML="2017.11.25-无论何时我们的恋情都是10厘米";}
+else if(d=="20171129"){document.getElementById("AnswerBox").innerHTML="2017.11.29-URAHARA";}
+else if(d=="20171203"){document.getElementById("AnswerBox").innerHTML="2017.12.03-宝石之国";}
+else if(d=="20171206"){document.getElementById("AnswerBox").innerHTML="2017.12.06-国家宝藏";}
+else if(d=="20171207"){document.getElementById("AnswerBox").innerHTML="2017.12.07-BBC earth 60th";}
+else if(d=="20171215"){document.getElementById("AnswerBox").innerHTML="2017.12.15-西游记之大圣归来";}
+else if(d=="20171216"){document.getElementById("AnswerBox").innerHTML="2017.12.16-EVA 新世纪福音战士";}
+else if(d=="20171217"){document.getElementById("AnswerBox").innerHTML="2017.12.17-魔法少女小圆";}
+else if(d=="20171218"){document.getElementById("AnswerBox").innerHTML="2017.12.18-狼与辛香料";}
+else if(d=="20171219"){document.getElementById("AnswerBox").innerHTML="2017.12.19-BBC 大卫•爱登堡与巨象";}
+else if(d=="20171220"){document.getElementById("AnswerBox").innerHTML="2017.12.20-年度弹幕";}
+else if(d=="20171221"){document.getElementById("AnswerBox").innerHTML="2017.12.21-刀剑神域 序列之争";}
+else if(d=="20171223"){document.getElementById("AnswerBox").innerHTML="2017.12.23-双蛋祈愿，万一实现了呢";}
+else if(d=="20171224"){document.getElementById("AnswerBox").innerHTML="2017.12.24-一月新番";}
+else if(d=="20171225"){document.getElementById("AnswerBox").innerHTML="2017.12.25-圣诞节";}
+else if(d=="20171228"){document.getElementById("AnswerBox").innerHTML="2017.12.28-BLS总选大会";}
+else if(d=="20171230"){document.getElementById("AnswerBox").innerHTML="2017.12.30-剑网3重置版公测";}
+else if(d=="20171231"){document.getElementById("AnswerBox").innerHTML="2017.12.31-国创2017-2018";}
+else if(d=="20180102"){document.getElementById("AnswerBox").innerHTML="2018.01.02-2017番剧年度盘点";}
+else if(d=="20180104"){document.getElementById("AnswerBox").innerHTML="2018.01.04-Dior";}
+else if(d=="20180105"){document.getElementById("AnswerBox").innerHTML="2018.01.05-爱吃拉面的小泉同学";}
+else if(d=="20180106"){document.getElementById("AnswerBox").innerHTML="2018.01.06-狐妖小红娘2亿播放";}
+else if(d=="20180107"){document.getElementById("AnswerBox").innerHTML="2018.01.07-魔卡少女樱 CLEAR CARD篇";}
+else if(d=="20180108"){document.getElementById("AnswerBox").innerHTML="2018.01.08-citrus～柑橘味香气～";}
+else if(d=="20180111"){document.getElementById("AnswerBox").innerHTML="2018.01.11&13-紫罗兰永恒花园";}
+else if(d=="20180114"){document.getElementById("AnswerBox").innerHTML="2018.01.14-魔卡少女樱 CLEAR CARD篇";}
+else if(d=="20180115"){document.getElementById("AnswerBox").innerHTML="2018.01.15-Beats广告";}
+else if(d=="20180116"){document.getElementById("AnswerBox").innerHTML="2018.01.16-英雄联盟LPL2018春季赛";}
+else if(d=="20180118"){document.getElementById("AnswerBox").innerHTML="2018.01.18&19-紫罗兰永恒花园";}
+else if(d=="20180121"){document.getElementById("AnswerBox").innerHTML="2018.01.21-魔卡少女樱 CLEAR CARD篇";}
+else {document.getElementById("AnswerBox").innerHTML="本日無圖！";}
+}
+</script> 
+
+<script language=javascript> 
+function go()
+{
+var d = document.getElementById("day").value;
+if(d.length == 8){
+if(d >= "20180000"){window.open('https://bilicover.gitbooks.io/2018/content/'+d+".html");}
+else if(d >= "20170000"){window.open('https://bilicover.gitbooks.io/2017/content/'+d+".html");}
+else if(d >= "20160000"){window.open('https://bilicover.gitbooks.io/2016/content/'+d+".html");}
+else if(d >= "20150000"){window.open('https://bilicover.gitbooks.io/2015/content/'+d+".html");}
+}
+}
+</script> 
+
+<script language=javascript> 
+function go2()
+{
+var d = document.getElementById("day").value;
+if(d.length == 8){
+if(d >= "20180000"){window.open('https://bilicover.gitbooks.io/2018/content/'+d+"-2.html");}
+else if(d >= "20170000"){window.open('https://bilicover.gitbooks.io/2017/content/'+d+"-2.html");}
+else if(d >= "20160000"){window.open('https://bilicover.gitbooks.io/2016/content/'+d+"-2.html");}
+else if(d >= "20150000"){window.open('https://bilicover.gitbooks.io/2015/content/'+d+"-2.html");}
+}
+}
+</script> 
+</body>
+</html>
