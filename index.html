@@ -8,7 +8,7 @@
 1. 链接可能会加载多张图片，消耗流量较大，请小心！<br/>
 2. 加载分页图片大约需要15秒，完整加载后才会显示，请耐心等候。<br/>
 
-<h2>輸入日期查詢：（如20180121）</h2>
+<h2>输入日期搜索：（如20180121）</h2>
 <input id="day" type="text" onkeyup="Count()"/><span id="AnswerBox"></span><br/><br/>
 <input type="submit" id="submit1" value="前往" onclick="go();" disabled="disabled"/>
 <input type="submit" id="submit2" value="前往2" style="display: none;" onclick="go2();">
@@ -18,7 +18,7 @@
 2. <a href="https://bilicover.gitbooks.io/2016/content/">2016年</a><br/>
 3. <a href="https://bilicover.gitbooks.io/2017/content/">2017年</a><br/>
 4. <a href="https://bilicover.gitbooks.io/2018/content/">2018年</a><br/>
-5. <a href="https://bilicover.gitbooks.io/main/content/">生日賀圖</a><br/>
+5. <a href="https://bilicover.gitbooks.io/main/content/">生日贺图</a><br/>
 <script language=javascript> 
 function ValidateNumber(e, pnumber)
 {
@@ -34,7 +34,7 @@ function ValidateNumber(e, pnumber)
 function Count()
 {
 var d = document.getElementById("day").value;
-if(d.length != 8){document.getElementById("AnswerBox").innerHTML="　請輸入正確日期！";document.getElementById('submit1').disabled = 'disabled';}
+if(d.length != 8){document.getElementById("AnswerBox").innerHTML="　请输入正确日期！";document.getElementById('submit1').disabled = 'disabled';}
 else if(d=="20150000"){document.getElementById("AnswerBox").innerHTML="　2015-默认封面";document.getElementById('submit1').disabled =false;}
 else if(d=="20150001"){document.getElementById("AnswerBox").innerHTML="　2015未知日期";document.getElementById('submit1').disabled =false;}
 else if(d=="20150002"){document.getElementById("AnswerBox").innerHTML="　2015-yooooo";document.getElementById('submit1').disabled =false;}
@@ -328,7 +328,7 @@ else if(d=="20180115"){document.getElementById("AnswerBox").innerHTML="　2018.0
 else if(d=="20180116"){document.getElementById("AnswerBox").innerHTML="　2018.01.16-英雄联盟LPL2018春季赛";document.getElementById('submit1').disabled =false;}
 else if(d=="20180118"){document.getElementById("AnswerBox").innerHTML="　2018.01.18&19-紫罗兰永恒花园";document.getElementById('submit1').disabled =false;}
 else if(d=="20180121"){document.getElementById("AnswerBox").innerHTML="　2018.01.21-魔卡少女樱 CLEAR CARD篇";document.getElementById('submit1').disabled =false;}
-else {document.getElementById("AnswerBox").innerHTML="　本日無圖！";document.getElementById('submit1').disabled = 'disabled';}
+else {document.getElementById("AnswerBox").innerHTML="　本日无图！";document.getElementById('submit1').disabled = 'disabled';}
 }
 </script> 
 
