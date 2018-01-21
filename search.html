@@ -3,8 +3,12 @@
 <title>Bilibili 客户端封面收藏查詢</title>
 </head>
 <body>
-請輸入日期：（如20180121）
-<br/>
+<h1>Bilibili 客户端封面收藏</h1>
+<h2>警告及注意事项：</h2>
+1. 链接可能会加载多张图片，消耗流量较大，请小心！<br/>
+2. 加载分页图片大约需要15秒，完整加载后才会显示，请耐心等候。<br/>
+
+<h2>輸入日期查詢：（如20180121）</h2>
 <input id="day" type="text" onkeyup="Count()"/>
 <br/>
 <span id="AnswerBox"></span>
@@ -13,6 +17,12 @@
 	
 <input type="submit" id="submit2" value="前往2" style="display: none;" onclick="go2();">
 
+<h2>快捷跳转：</h2>
+1. <a href="https://bilicover.gitbooks.io/2015/content/">2015年</a><br/>
+2. <a href="https://bilicover.gitbooks.io/2016/content/">2016年</a><br/>
+3. <a href="https://bilicover.gitbooks.io/2017/content/">2017年</a><br/>
+4. <a href="https://bilicover.gitbooks.io/2018/content/">2018年</a><br/>
+5. <a href="https://bilicover.gitbooks.io/main/content/">生日賀圖</a><br/>
 <script language=javascript> 
 function ValidateNumber(e, pnumber)
 {
