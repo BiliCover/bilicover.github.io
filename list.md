@@ -391,7 +391,7 @@
 * [2018.01.14-魔卡少女樱 CLEAR CARD篇](https://bilicover.gitbooks.io/2018/content/20180114.html)
 * [2018.01.15-Beats广告](https://bilicover.gitbooks.io/2018/content/20180115.html)
 * [2018.01.16-英雄联盟LPL2018春季赛](https://bilicover.gitbooks.io/2018/content/20180116.html)
-* [2018.01.18-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180118.html)
+* [2018.01.18&19-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180118.html)
 * [2018.01.20-2017年终盘点(已被撤回，并未显示)](https://bilicover.gitbooks.io/2018/content/20180120.html)
 * [2018.01.21-魔卡少女樱 CLEAR CARD篇](https://bilicover.gitbooks.io/2018/content/20180121.html)
 * [2018.01.22-BLG战队百万悬赏招募绝地求生队员](https://bilicover.gitbooks.io/2018/content/20180122.html)
