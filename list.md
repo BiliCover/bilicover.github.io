@@ -394,3 +394,7 @@
 * [2018.01.18-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180118.html)
 * [2018.01.21-魔卡少女樱 CLEAR CARD篇](https://bilicover.gitbooks.io/2018/content/20180121.html)
 * [2018.01.22-BLG战队百万悬赏招募绝地求生队员](https://bilicover.gitbooks.io/2018/content/20180122.html)
+* [2018.01.23-FGO终局特异点](https://bilicover.gitbooks.io/2018/content/20180123.html)
+* [2018.01.25-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180125.html)
+* [2018.01.26-英雄联盟LPL2018春季赛](https://bilicover.gitbooks.io/2018/content/20180126.html)
+* [2018.01.27-FGO年末祭](https://bilicover.gitbooks.io/2018/content/20180127.html)
