@@ -392,5 +392,6 @@
 * [2018.01.25-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180125.html)
 * [2018.01.26-英雄联盟LPL2018春季赛](https://bilicover.gitbooks.io/2018/content/20180126.html)
 * [2018.01.27-FGO年末祭](https://bilicover.gitbooks.io/2018/content/20180127.html)
+* [2018.01.28-Fate/EXTRA Last Encore](https://bilicover.gitbooks.io/2018/content/20180128.html)
 
 ## 2018年02月
