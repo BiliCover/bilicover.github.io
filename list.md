@@ -77,7 +77,7 @@
 * [2015.11.30-富坚义博休刊一周年](https://bilicover.gitbooks.io/2015/content/20151130.html)
 
 ## 2015年12月
-* [22015.12.05-别克威朗广告](https://bilicover.gitbooks.io/2015/content/20151205.html)
+* [2015.12.05-别克威朗广告](https://bilicover.gitbooks.io/2015/content/20151205.html)
 * [2015.12.14-官博150w粉](https://bilicover.gitbooks.io/2015/content/20151214.html)
 * [2015.12.24-平安夜](https://bilicover.gitbooks.io/2015/content/20151224.html)
 
