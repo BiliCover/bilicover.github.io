@@ -393,5 +393,7 @@
 * [2018.01.26-英雄联盟LPL2018春季赛](https://bilicover.gitbooks.io/2018/content/20180126.html)
 * [2018.01.27-FGO年末祭](https://bilicover.gitbooks.io/2018/content/20180127.html)
 * [2018.01.28-Fate/EXTRA Last Encore](https://bilicover.gitbooks.io/2018/content/20180128.html)
+* [2018.01.29-zuo酸奶广告](20180129.md)
 
 ## 2018年02月
+* [2018.02.01-压岁钱清空计划](20180201.md)
