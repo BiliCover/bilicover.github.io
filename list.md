@@ -398,4 +398,5 @@
 ## 2018年02月
 * [2018.02.01-压岁钱清空计划](https://bilicover.gitbooks.io/2018/content/20180201.html)
 * [2018.02.02-BBC神奇的月球](https://bilicover.gitbooks.io/2018/content/20180202.html)
+* [2018.02.05-英雄联盟LPL2018春季赛(BLG vs RNG)](https://bilicover.gitbooks.io/2018/content/20180205.html)
 
