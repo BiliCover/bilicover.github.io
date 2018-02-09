@@ -375,7 +375,7 @@
 
 ## 2018年01月
 * [2018.01.02-2017番剧年度盘点](https://bilicover.gitbooks.io/2018/content/20180102.html)
-* [2018.01.04-Dior](https://bilicover.gitbooks.io/2018/content/20180104.html)
+* [2018.01.04-Dior广告](https://bilicover.gitbooks.io/2018/content/20180104.html)
 * [2018.01.05-爱吃拉面的小泉同学](https://bilicover.gitbooks.io/2018/content/20180105.html)
 * [2018.01.06-狐妖小红娘2亿播放](https://bilicover.gitbooks.io/2018/content/20180106.html)
 * [2018.01.07-魔卡少女樱 CLEAR CARD篇](https://bilicover.gitbooks.io/2018/content/20180107.html)
