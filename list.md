@@ -401,3 +401,5 @@
 * [2018.02.06-会员购福利计画](https://bilicover.gitbooks.io/2018/content/20180206.html)
 * [2018.02.07-卫生巾广告](https://bilicover.gitbooks.io/2018/content/20180207.html)
 * [2018.02.08-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180208.html)
+* [2018.02.10-国宝耀中华 KFC广告](https://bilicover.gitbooks.io/2018/content/20180210.html)
+
