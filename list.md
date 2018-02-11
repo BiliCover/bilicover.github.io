@@ -403,4 +403,5 @@
 * [2018.02.08-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180208.html)
 * [2018.02.10-国宝耀中华 KFC广告](https://bilicover.gitbooks.io/2018/content/20180210.html)
 * [2018.02.11-国宝耀中华(明宪宗元宵行乐图) KFC广告](https://bilicover.gitbooks.io/2018/content/20180211.html)
+* [2018.02.12-国宝耀中华(送2233手办) KFC广告](https://bilicover.gitbooks.io/2018/content/20180212.html)
 
