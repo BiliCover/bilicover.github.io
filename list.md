@@ -406,4 +406,4 @@
 * [2018.02.12-国宝耀中华(送2233手办) KFC广告](https://bilicover.gitbooks.io/2018/content/20180212.html)
 * [2018.02.13-2018拜年祭倒数两天](https://bilicover.gitbooks.io/2018/content/20180213.html)
 * [2018.02.14-2018拜年祭倒数一天](https://bilicover.gitbooks.io/2018/content/20180214.html)
-
+* [2018.02.15-2018拜年祭预告](https://bilicover.gitbooks.io/2018/content/20180215.html)
