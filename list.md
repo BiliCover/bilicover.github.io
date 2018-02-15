@@ -407,3 +407,4 @@
 * [2018.02.13-2018拜年祭倒数两天](https://bilicover.gitbooks.io/2018/content/20180213.html)
 * [2018.02.14-2018拜年祭倒数一天](https://bilicover.gitbooks.io/2018/content/20180214.html)
 * [2018.02.15-2018拜年祭预告](https://bilicover.gitbooks.io/2018/content/20180215.html)
+* [2018.02.15-2018拜年祭开始](https://bilicover.gitbooks.io/2018/content/20180215-2.html)
