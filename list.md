@@ -410,5 +410,6 @@
 * [2018.02.15-2018拜年祭预告](https://bilicover.gitbooks.io/2018/content/20180215.html)
 * [2018.02.15-2018拜年祭开始](https://bilicover.gitbooks.io/2018/content/20180215-2.html)
 * [2018.02.16-年初一 饺子](https://bilicover.gitbooks.io/2018/content/20180216.html)
+* [2018.02.17-年初二 鲤鱼年糕](https://bilicover.gitbooks.io/2018/content/20180217.html)
 
 ## 2018年03月
