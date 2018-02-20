@@ -1,0 +1,19 @@
+<html>
+<body>
+<form method="post" action="###" name="myform" onsubmit="checkpost()">
+<label for="name">用户名：</label><input type="text" name="name" id="name" /><br />
+<label for="pw">密码：</label><input type="password" name="pw" id="pw" /><br />
+<input type="submit" value="提交" />
+</form>
+<script>
+function checkpost(){
+if(document.forms[0].name.value=="要的用户名"&&document.forms[0].pw.value=="要的密码"){
+window.location="要跳转的地址";
+}else{
+alert("用户名或密码不正确！")
+return false;
+}
+}
+</script>
+</body>
+</html>
