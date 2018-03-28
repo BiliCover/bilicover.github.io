@@ -1,5 +1,5 @@
 # [2018-03-28 22:30~2018-03-29 23:59-B站上市](https://www.bilibili.com/read/cv328714)
-# [录播](https://www.bilibili.com/video/av21295743)
+# [官方录播](https://www.bilibili.com/video/av21295743)
 ## 2732x2048(PC)
 ![](http://i0.hdslb.com/bfs/archive/a661ac8ffbe9a74a3781bd4a207e52a4cb114d7f.jpg)
 ## 1024x768
